@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SHOP</title>
+    <link rel="stylesheet" href="~/datatables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/E_OnlineShop.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/lib/sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="~/sale-bag.ico">
+
+    <style>
+      main{
+            margin-bottom: 50px; /* Adjust the value as needed to create space between the content and the footer */
+          }
+    </style>
+</head>
+
+<body>
+    <header>
+        <partial name="_NavBarLayoutPartial" />
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer bg-primary fixed-bottom">
+        <div class="text-center">
+            ASP .NET © Project | Made with <i class="bi bi-heart-fill"></i> By ALNUAIMI
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/datatables/js/jquery.datatables.min.js"></script>
+    <script src="~/lib/sweetalert2/sweetalert2.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/wf7w4zru52so5pl34milliftxwk10yu70qpgzsksaizmrct8/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    @await Component.InvokeAsync("Notyf")
+    @await RenderSectionAsync("Scripts", required: false)
+   
+
+</body>
+</html>
