@@ -11,5 +11,9 @@ namespace E_OnlineShop.DataAccess.Repositories
         {
             _db = context;
         }
+        public async Task Update(ApplicationUser applicationUser)
+        {
+            await Task.FromResult(_db.ApplicationUsers.Update(applicationUser));
+        }
     }
 }
