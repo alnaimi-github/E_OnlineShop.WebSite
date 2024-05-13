@@ -144,6 +144,25 @@ namespace E_OnlineShop.Areas.Admin.Controllers
 
             return Json(new { success = true, message = "Operation Successful" });
         }
+        [HttpDelete]
+        public async Task<IActionResult> Delete(string? id)
+        {
+            var userToDelete = await _userManager.FindByIdAsync(id!);
+            if (userToDelete == null)
+            {
+                return Json(new { success = false, message = "User not found." });
+            }
+
+            var result = await _userManager.DeleteAsync(userToDelete);
+            if (result.Succeeded)
+            {
+                return Json(new { success = true, message = "User deleted successfully." });
+            }
+            else
+            {
+                return Json(new { success = false, message = "Failed to delete user." });
+            }
+        }
 
         #endregion
     }

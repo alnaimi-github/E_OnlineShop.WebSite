@@ -207,10 +207,19 @@ namespace E_OnlineShop.Areas.Identity.Pages.Account
                         if (User.IsInRole(SD.Role_Admin))
                         {
                             _notyf.Success("New User Created Successfully.", 4);
+                            var userFromAdmin = await _userManager.FindByIdAsync(userId);
+
+                            // Set the EmailConfirmed property to true
+                            userFromAdmin.EmailConfirmed = true;
+
+                            // Update the user in the database
+                            await _userManager.UpdateAsync(userFromAdmin);
+                            return RedirectToAction(nameof(Index), "User", new { area = "Admin" });
+
                         }
                         else
                         {
-                           // await _signInManager.SignInAsync(user, isPersistent: false);
+                            // await _signInManager.SignInAsync(user, isPersistent: false);
                         }
                         return RedirectToPage("Login");
                     }

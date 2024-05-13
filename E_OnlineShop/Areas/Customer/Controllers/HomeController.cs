@@ -26,7 +26,7 @@ namespace E_OnlineShop.Areas.Customer.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(string? searchString)
         {
-            IEnumerable<Product> productList = await _UnitOfWork.product.GetAll(includeProperties: "Category");
+            IEnumerable<Product> productList = await _UnitOfWork.product.GetAll(includeProperties: "Category,ProductImages");
             if (!string.IsNullOrEmpty(searchString))
             {
                 productList = productList.Where(a => a.Title.ToLower().Contains(searchString.ToLower()));
@@ -38,7 +38,7 @@ namespace E_OnlineShop.Areas.Customer.Controllers
         {
             ShoppingCart cart = new()
             {
-                Product = await _UnitOfWork.product.Get(p => p.Id == productId, includeProperties: "Category"),
+                Product = await _UnitOfWork.product.Get(p => p.Id == productId, includeProperties: "Category,ProductImages"),
                 Id = productId,
                 Count = 1
 

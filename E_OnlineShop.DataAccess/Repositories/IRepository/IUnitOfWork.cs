@@ -9,7 +9,8 @@
         IApplicationUserRepository applicationUser { get; }
 		IOrderDetailRepository orderDetail { get; }
 		IOrderHeaderRepository orderHeader { get; }
-		Task Save();
+        IProductImageRepository ProductImage { get; }
+        Task Save();
 
 
     }

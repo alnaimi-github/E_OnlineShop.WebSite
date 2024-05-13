@@ -5,36 +5,64 @@
     ViewData["Title"] = "Register";
 }
 
-<div class="container">
-    <h1 class="mt-5">@ViewData["Title"]</h1>
-    <h2 id="external-login-title">Associate your @Model.ProviderDisplayName account.</h2>
-    <hr />
-
-    <p id="external-login-description" class="text-info">
-        You've successfully authenticated with <strong>@Model.ProviderDisplayName</strong>.
-        Please enter an email address for this site below and click the Register button to finish
-        logging in.
-    </p>
-
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <form asp-page-handler="Confirmation" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Email" class="form-control" autocomplete="email" placeholder="Please enter your email." />
-                    <label asp-for="Input.Email" class="form-label"></label>
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <!-- Adjusted column width -->
+            <div class="card shadow border-0">
+                <div class="card-body">
+                    <h1 class="text-center mb-4">@ViewData["Title"]</h1>
+                    <h2 id="external-login-title" class="text-center mb-4">Associate your @Model.ProviderDisplayName account.</h2>
+                    <p id="external-login-description" class="text-center mb-4 text-info">
+                        You've successfully authenticated with <strong>@Model.ProviderDisplayName</strong>.
+                        Please enter an email address for this site below and click the Register button to finish
+                        logging in.
+                    </p>
+                    <form asp-page-handler="Confirmation" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+                        <div class="mb-3">
+                            <label for="Input_Email" class="form-label">Email</label>
+                            <input asp-for="Input.Email" id="Input_Email" class="form-control" autocomplete="email" placeholder="Please enter your email." />
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Input_Name" class="form-label">Name</label>
+                            <input asp-for="Input.Name" id="Input_Name" class="form-control" autocomplete="name" placeholder="Please enter your name." />
+                            <span asp-validation-for="Input.Name" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Input_PhoneNumber" class="form-label">Phone Number</label>
+                            <input asp-for="Input.PhoneNumber" id="Input_PhoneNumber" class="form-control" autocomplete="tel" placeholder="Please enter your phone number." />
+                            <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Input_StreetAddress" class="form-label">Street Address</label>
+                            <input asp-for="Input.StreetAddress" id="Input_StreetAddress" class="form-control" autocomplete="street-address" placeholder="Please enter your street address." />
+                            <span asp-validation-for="Input.StreetAddress" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Input_City" class="form-label">City</label>
+                            <input asp-for="Input.City" id="Input_City" class="form-control" autocomplete="address-level2" placeholder="Please enter your city." />
+                            <span asp-validation-for="Input.City" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Input_State" class="form-label">State</label>
+                            <input asp-for="Input.State" id="Input_State" class="form-control" autocomplete="address-level1" placeholder="Please enter your state." />
+                            <span asp-validation-for="Input.State" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Input_PostalCode" class="form-label">Postal Code</label>
+                            <input asp-for="Input.PostalCode" id="Input_PostalCode" class="form-control" autocomplete="postal-code" placeholder="Please enter your postal code." />
+                            <span asp-validation-for="Input.PostalCode" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary w-100 mb-3">Register</button>
+                    </form>
                 </div>
-                <!-- Repeat the same structure for other form fields -->
-                <button type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
-            </form>
+            </div>
         </div>
     </div>
 </div>
 
-<footer class="border-top footer bg-primary fixed-bottom mt-5">
-    <!-- Your footer content here -->
-</footer>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

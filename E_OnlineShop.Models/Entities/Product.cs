@@ -40,10 +40,7 @@ namespace E_OnlineShop.Models.Entities
         public int CategoryId { get; set; }
         [ForeignKey(nameof(CategoryId))]
         public Category? Category { get; set; }
-        public string? ImageUrl { get; set; } = string.Empty;
-
-        //[ValidateNever]
-        //public List<ProductImage> ProductImages { get; set; }
+        public List<ProductImage>? ProductImages { get; set; }
 
     }
 }
