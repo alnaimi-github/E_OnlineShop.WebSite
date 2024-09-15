@@ -1,3 +1,25 @@
+Online Shopping Application - MVC Architecture
+Overview
+Welcome to the Online Shopping Application repository! This project is a comprehensive example of an e-commerce application designed using the Layered Architecture and MVC (Model-View-Controller) pattern. The application demonstrates best practices for designing scalable, maintainable, and efficient web applications.
+
+Features
+Product Catalog: View and search products available in the online store.
+User Management: Register, login, and manage user profiles.
+Shopping Cart: Add, update, and remove items from the shopping cart.
+Checkout: Complete purchases and process payments.
+Order History: View past orders and track current orders.
+Admin Panel: Manage products, categories, and orders.
+Architecture
+1. Layered Architecture
+Presentation Layer: Handles the user interface and user interaction. This is where the views (HTML, CSS, JavaScript) reside, managed by the MVC controllers.
+Business Logic Layer: Contains the core functionality and business rules. It processes user inputs, performs validations, and executes business logic.
+Data Access Layer: Manages interactions with the database. It provides methods to perform CRUD operations and handle data persistence.
+Data Layer: Represents the database schema and data models used by the Data Access Layer.
+2. MVC Pattern
+Model: Represents the data structure and business logic. It is responsible for retrieving, storing, and processing data from the database.
+View: The user interface components. It displays data to the user and provides forms for user input.
+Controller: Manages user input and interacts with the Model to update the View. It handles the flow of data between the Model and the View.
+
 ![diagram-export-8-31-2024-5_52_30-AM](https://github.com/user-attachments/assets/536d2f9f-59a8-4057-a79d-2558e71c7ff8)
 
 
