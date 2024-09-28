@@ -43,7 +43,7 @@ Phase 3: Testing - Scheduled for [Date]
 
 ![Project organization chart (Community) (1)](https://github.com/user-attachments/assets/d0c5220c-9fef-49cf-8656-736d9559d654)
 
-- Discover ---> got to Wiki pages [(https://github.com/alnaimi-github/E_OnlineShop.WebSite.wiki.git)] .
+- Discover ---> got to Wiki pages https://github.com/alnaimi-github/E_OnlineShop.WebSite/wiki
 
 ![Software project - Frame 1](https://github.com/user-attachments/assets/880282bd-b217-4d85-8292-39752ecff6c1)
 
