@@ -1,50 +1,51 @@
-Online Shopping Application - MVC Architecture
-Overview
-Welcome to the Online Shopping Application repository! This project is a comprehensive example of an e-commerce application designed using the Layered Architecture and MVC (Model-View-Controller) pattern. The application demonstrates best practices for designing scalable, maintainable, and efficient web applications.
+# Introduction to the .NET Team 👥
+![Project organization chart (Community) (2)](https://github.com/user-attachments/assets/b6ce884f-473e-4fb0-9c0d-3c820a49131c)
 
-Features
-Product Catalog: View and search products available in the online store.
-User Management: Register, login, and manage user profiles.
-Shopping Cart: Add, update, and remove items from the shopping cart.
-Checkout: Complete purchases and process payments.
-Order History: View past orders and track current orders.
-Admin Panel: Manage products, categories, and orders.
-Architecture
-1. Layered Architecture
-Presentation Layer: Handles the user interface and user interaction. This is where the views (HTML, CSS, JavaScript) reside, managed by the MVC controllers.
-Business Logic Layer: Contains the core functionality and business rules. It processes user inputs, performs validations, and executes business logic.
-Data Access Layer: Manages interactions with the database. It provides methods to perform CRUD operations and handle data persistence.
-Data Layer: Represents the database schema and data models used by the Data Access Layer.
-2. MVC Pattern
-Model: Represents the data structure and business logic. It is responsible for retrieving, storing, and processing data from the database.
-View: The user interface components. It displays data to the user and provides forms for user input.
-Controller: Manages user input and interacts with the Model to update the View. It handles the flow of data between the Model and the View.
+## Team Leader: Abdulwaisa Al Nuaimi
+**Abdulwaisa Al Nuaimi** is the team leader for the .NET development team. He is known for his extensive experience in software development, particularly in building scalable and maintainable applications using the .NET framework. Abdulwaisa has played a crucial role in designing and implementing the architecture of the **E_OnlineShop.WebSite** project.
 
-![diagram-export-8-31-2024-5_52_30-AM](https://github.com/user-attachments/assets/536d2f9f-59a8-4057-a79d-2558e71c7ff8)
+## Team Members:
+- **Ahemad Maftah**: A dedicated software developer specializing in back-end development. His contributions to the project include optimizing database interactions and ensuring the smooth operation of the business logic layer.
+  
+- **Dhwwd Jahman**:  A dedicated software developer specializing in back-end development. His contributions to the project include optimizing database interactions and ensuring the smooth operation of the business logic layer.
 
 
-![activity2](https://github.com/user-attachments/assets/fd4d78e5-0a5c-49e7-a680-f8d762e0dfd3)
-![Class dagram](https://github.com/user-attachments/assets/3375500b-65cd-42f2-b2a1-f074f30d0f0f)
+Project Timeline 📅
+mermaid
+Copy code
+gantt
+    title Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Phase 1: Requirements Gathering
+    Completed         :done,    des1, 2024-01-01, 2024-01-15
+    section Phase 2: Development
+    Backend Development  :active,  des2, 2024-01-16, 2024-03-15
+    Frontend Development :active,  des3, 2024-01-16, 2024-03-15
+    section Phase 3: Testing
+    Testing Phase      :         des4, 2024-03-16, 2024-04-01
+    section Phase 4: Launch
+    Launch             :         des5, 2024-04-02, 1d
+Suggestions for Documentation Enhancements 📋
+Roles and Responsibilities:
 
+Clearly outline specific roles and responsibilities for each team member to clarify contributions and expectations.
+Example:
+Abdulwaisa Al Nuaimi: Team leader, overseeing project architecture and design.
+Ahemad Maftah: Back-end developer, responsible for database optimization and business logic.
+Dhwwd Jahman: Front-end developer, focusing on user interface design and user experience.
+Project Timeline:
 
+Add a timeline of the project phases or milestones to track progress and deliverables.
+Example:
+Phase 1: Requirements Gathering - Completed on [Date]
+Phase 2: Development - Ongoing until [Date]
+Phase 3: Testing - Scheduled for [Date]
 
-![diagram-export-8-31-2024-5_30_40-AM](https://github.com/user-attachments/assets/942bcc7f-b398-4117-bd4d-c40ab4913860)
+![Project organization chart (Community) (1)](https://github.com/user-attachments/assets/d0c5220c-9fef-49cf-8656-736d9559d654)
 
+- Discover ---> got to Wiki pages [(https://github.com/alnaimi-github/E_OnlineShop.WebSite.wiki.git)] .
 
-![image](https://github.com/user-attachments/assets/7f7622e0-3f29-43b2-9ee9-fd15b3351662)
-
-![image](https://github.com/user-attachments/assets/621ff80f-d324-4183-b32e-560f735faa7d)
-
-![image](https://github.com/user-attachments/assets/738846bc-7c1c-4ba8-9afa-ba788859f185)
-
-![image](https://github.com/user-attachments/assets/2e136119-2bdc-440a-a70f-04b30dc68393)
-
-![image](https://github.com/user-attachments/assets/63250204-a299-4f91-b9e5-361571a3de46)
-
-![image](https://github.com/user-attachments/assets/133181c5-fffb-44ec-967b-1df8126913c0)
-![image](https://github.com/user-attachments/assets/7bd6b306-46a3-456f-a8db-56746cc0b24f)
-
-![image](https://github.com/user-attachments/assets/e988d02a-3e07-4bc5-b2cc-380002f06b01)
+![Software project - Frame 1](https://github.com/user-attachments/assets/880282bd-b217-4d85-8292-39752ecff6c1)
 
 
 
